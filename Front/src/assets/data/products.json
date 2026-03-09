@@ -41,8 +41,8 @@
     },
     {
         "url_image": "assets/products/1.jpeg",
-        "title": "Animales de la granja",
-        "description": "Juego didáctico para reconocer animales y sus sonidos.",
+        "title": "Juego uno",
+        "description": "Juego descripcion.",
         "price": 4310,
         "category": "Juegos",
         "count": 12
@@ -56,9 +56,9 @@
         "count": 7
     },
     {
-        "url_image": "assets/products/1.jpeg",
-        "title": "Rompecabezas infantil",
-        "description": "Rompecabezas imprimible para estimular el pensamiento lógico.",
+        "url_image": "assets/products/bingo.png",
+        "title": "Bingo de nombres",
+        "description": "Juego de nombres para practicar el lenguaje.",
         "price": 2500,
         "category": "Juegos",
         "count": 6
@@ -77,6 +77,38 @@
         "description": "Cartas imprimibles para trabajar la memoria visual.",
         "price": 4000,
         "category": "Juegos",
+        "count": 5
+    },
+    {
+        "url_image": "assets/products/1.jpeg",
+        "title": "Material 1",
+        "description": "Material 1...",
+        "price": 4000,
+        "category": "Materiales",
+        "count": 5
+    },
+    {
+        "url_image": "assets/products/1.jpeg",
+        "title": "Material 2",
+        "description": "Material 2...",
+        "price": 4000,
+        "category": "Materiales",
+        "count": 5
+    },
+    {
+        "url_image": "assets/products/1.jpeg",
+        "title": "Material 3",
+        "description": "Material 3...",
+        "price": 4000,
+        "category": "Materiales",
+        "count": 5
+    },
+    {
+        "url_image": "assets/products/1.jpeg",
+        "title": "Material 4",
+        "description": "Material 4...",
+        "price": 4000,
+        "category": "Materiales",
         "count": 5
     }
 ]

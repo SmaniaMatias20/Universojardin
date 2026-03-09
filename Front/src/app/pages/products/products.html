@@ -48,6 +48,12 @@
                 Arte
             </button>
 
+            <button (click)="filterCategory('Materiales')" class="px-4 py-2 rounded-full cursor-pointer" [ngClass]="selectedCategory === 'Materiales'
+        ? 'bg-pink-600 text-white'
+        : 'bg-white border hover:bg-pink-100'">
+                Materiales
+            </button>
+
         </div>
 
         <!-- Grid de productos -->
