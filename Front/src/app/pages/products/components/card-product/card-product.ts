@@ -12,4 +12,13 @@ export class CardProduct {
   @Input() description!: string;
   @Input() price!: any;
 
+
+  getWhatsappLink(): string {
+
+    const phone = '541162559206'; // tu número
+
+    const message = `Hola! Me interesa el recurso "${this.title}" con precio ${this.price === 0 ? 'Gratis' : '$' + this.price}.`;
+
+    return `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+  }
 }
