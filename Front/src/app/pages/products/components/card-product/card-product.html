@@ -19,25 +19,27 @@
             {{ description }}
         </p>
 
+        <!-- Cantidad de artículos vendidos -->
+        <p class="text-gray-600 text-sm mt-1">
+            {{ count }} {{ count === 1 ? 'item vendido' : 'items vendidos' }}
+        </p>
+
         <!-- Precio + botón -->
         <div class="flex items-center justify-between mt-2">
-            @if(price == 0) {
-            <span class="text-xl font-bold text-gray-900">
-                Gratis
-            </span>
-            }
-            @else {
-            <span class="text-xl font-bold text-gray-900">
-                ${{ price }}
-            </span>
-            }
 
+            <!-- Precio -->
+            <span class="text-xl font-bold text-gray-900">
+                {{ price === 0 ? 'Gratis' : '$' + price }}
+            </span>
+
+            <!-- Botón WhatsApp -->
             <a [href]="getWhatsappLink()" target="_blank"
                 class="px-4 py-2 text-sm bg-pink-600 text-white rounded-lg hover:bg-pink-800 transition">
                 Comprar
             </a>
 
         </div>
+
 
     </div>
 

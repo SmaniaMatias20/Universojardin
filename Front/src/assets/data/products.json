@@ -4,69 +4,79 @@
         "title": "Actividades de números",
         "description": "Material imprimible para trabajar números en sala de 4 y 5.",
         "price": 1000,
-        "category": "Matemática"
+        "category": "Matemática",
+        "count": 10
     },
     {
         "url_image": "assets/products/1.jpeg",
         "title": "Juego de vocales",
         "description": "Actividades divertidas para aprender vocales jugando.",
         "price": 8520,
-        "category": "Lenguaje"
+        "category": "Lenguaje",
+        "count": 4
     },
     {
         "url_image": "assets/products/1.jpeg",
         "title": "Tarjetas didácticas",
         "description": "Tarjetas para imprimir y trabajar conceptos básicos.",
         "price": 2000,
-        "category": "Lenguaje"
+        "category": "Lenguaje",
+        "count": 3
     },
     {
         "url_image": "assets/products/1.jpeg",
         "title": "Colores y formas",
         "description": "Actividades visuales para reconocer colores y formas.",
         "price": 0,
-        "category": "Arte"
+        "category": "Arte",
+        "count": 2
     },
     {
         "url_image": "assets/products/1.jpeg",
         "title": "Trazos iniciales",
         "description": "Fichas para practicar trazos y desarrollar la motricidad fina.",
         "price": 2000,
-        "category": "Lenguaje"
+        "category": "Lenguaje",
+        "count": 1
     },
     {
         "url_image": "assets/products/1.jpeg",
         "title": "Animales de la granja",
         "description": "Juego didáctico para reconocer animales y sus sonidos.",
         "price": 4310,
-        "category": "Juegos"
+        "category": "Juegos",
+        "count": 12
     },
     {
         "url_image": "assets/products/1.jpeg",
         "title": "Lectura inicial",
         "description": "Material para introducir a los niños en la lectura.",
         "price": 7100,
-        "category": "Lenguaje"
+        "category": "Lenguaje",
+        "count": 7
     },
     {
         "url_image": "assets/products/1.jpeg",
         "title": "Rompecabezas infantil",
         "description": "Rompecabezas imprimible para estimular el pensamiento lógico.",
         "price": 2500,
-        "category": "Juegos"
+        "category": "Juegos",
+        "count": 6
     },
     {
         "url_image": "assets/products/1.jpeg",
         "title": "Arte con témperas",
         "description": "Ideas y plantillas para actividades de arte en el aula.",
         "price": 3000,
-        "category": "Arte"
+        "category": "Arte",
+        "count": 3
     },
     {
         "url_image": "assets/products/1.jpeg",
         "title": "Juego de memoria",
         "description": "Cartas imprimibles para trabajar la memoria visual.",
         "price": 4000,
-        "category": "Juegos"
+        "category": "Juegos",
+        "count": 5
     }
 ]

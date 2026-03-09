@@ -54,8 +54,9 @@
         <div class="grid md:grid-cols-3 lg:grid-cols-4 gap-8">
 
             <app-card-product *ngFor="let product of filteredProducts" [url_image]="product.url_image"
-                [title]="product.title" [description]="product.description" [price]="product.price">
-            </app-card-product>
+                [title]="product.title" [description]="product.description" [price]="product.price"
+                [count]="product.count"></app-card-product>
+
 
         </div>
 

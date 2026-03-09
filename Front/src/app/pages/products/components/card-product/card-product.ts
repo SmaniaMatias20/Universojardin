@@ -11,6 +11,7 @@ export class CardProduct {
   @Input() title!: string;
   @Input() description!: string;
   @Input() price!: any;
+  @Input() count!: number;
 
 
   getWhatsappLink(): string {
