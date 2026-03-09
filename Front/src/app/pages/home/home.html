@@ -1,0 +1,99 @@
+<!-- HERO -->
+<section class="bg-pink-50 py-20">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
+
+        <div>
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-800 leading-tight">
+                Recursos digitales para
+                <span class="text-pink-600">docentes de jardín</span>
+            </h1>
+
+            <p class="mt-6 text-gray-600 text-lg">
+                Actividades, juegos, imprimibles y materiales educativos listos
+                para usar en el aula de nivel inicial.
+            </p>
+
+            <div class="mt-8 flex gap-4">
+                <button (click)="goToProducts()"
+                    class="bg-pink-600 text-white px-6 py-3 rounded-lg hover:bg-pink-700 transition cursor-pointer">
+                    Ver recursos
+                </button>
+
+                <button (click)="goToProducts()"
+                    class="border border-pink-600 text-pink-600 px-6 py-3 rounded-lg hover:bg-pink-100 transition cursor-pointer">
+                    Recursos gratis
+                </button>
+            </div>
+        </div>
+
+
+    </div>
+</section>
+
+
+<!-- RECURSOS DESTACADOS -->
+<section class="py-20">
+    <div class="max-w-7xl mx-auto px-6">
+
+        <h2 class="text-3xl font-bold text-center text-gray-800">
+            Recursos destacados
+        </h2>
+
+        <div class="grid md:grid-cols-3 lg:grid-cols-4 gap-8 mt-12">
+
+            @for (product of featuredProducts; track product.title) {
+
+            <app-card-product [url_image]="product.url_image" [title]="product.title"
+                [description]="product.description" [price]="product.price">
+            </app-card-product>
+
+            }
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- CATEGORÍAS -->
+<section class="bg-pink-50 py-20">
+    <div class="max-w-7xl mx-auto px-6">
+
+        <h2 class="text-3xl font-bold text-center text-gray-800">
+            Explorar categorías
+        </h2>
+
+        <div class="grid md:grid-cols-4 gap-6 mt-12">
+
+            <div class="bg-white p-6 rounded-xl shadow hover:shadow-md text-center">
+                <span class="material-icons text-4xl text-pink-600">
+                    palette
+                </span>
+                <p class="mt-2 font-medium">Arte</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-xl shadow hover:shadow-md text-center">
+                <span class="material-icons text-4xl text-pink-600">
+                    calculate
+                </span>
+                <p class="mt-2 font-medium">Matemática</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-xl shadow hover:shadow-md text-center">
+                <span class="material-icons text-4xl text-pink-600">
+                    menu_book
+                </span>
+                <p class="mt-2 font-medium">Lenguaje</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-xl shadow hover:shadow-md text-center">
+                <span class="material-icons text-4xl text-pink-600">
+                    sports_esports
+                </span>
+                <p class="mt-2 font-medium">Juegos</p>
+            </div>
+
+        </div>
+
+    </div>
+</section>

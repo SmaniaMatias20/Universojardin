@@ -1,0 +1,43 @@
+<div class="bg-white rounded-2xl shadow-sm hover:shadow-lg transition duration-300 overflow-hidden group">
+
+    <!-- Imagen -->
+    <div class="overflow-hidden">
+        <img [src]="url_image" [alt]="title"
+            class="w-full h-56 object-cover group-hover:scale-105 transition duration-300" />
+    </div>
+
+    <!-- Contenido -->
+    <div class="p-5 flex flex-col gap-3">
+
+        <!-- Título -->
+        <h3 class="text-lg font-semibold text-gray-800 line-clamp-1">
+            {{ title }}
+        </h3>
+
+        <!-- Descripción -->
+        <p class="text-sm text-gray-500 line-clamp-2">
+            {{ description }}
+        </p>
+
+        <!-- Precio + botón -->
+        <div class="flex items-center justify-between mt-2">
+            @if(price == 0) {
+            <span class="text-xl font-bold text-gray-900">
+                Gratis
+            </span>
+            }
+            @else {
+            <span class="text-xl font-bold text-gray-900">
+                ${{ price }}
+            </span>
+            }
+
+            <button class="px-4 py-2 text-sm bg-pink-600 text-white rounded-lg hover:bg-pink-800 transition">
+                Comprar
+            </button>
+
+        </div>
+
+    </div>
+
+</div>

@@ -1,0 +1,64 @@
+<section class="bg-pink-50 min-h-screen py-16">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+        <!-- Título -->
+        <div class="text-center mb-12">
+
+            <h1 class="text-4xl font-bold text-gray-800">
+                Recursos educativos
+            </h1>
+
+            <p class="text-gray-600 mt-4">
+                Materiales listos para usar en el aula de nivel inicial
+            </p>
+
+        </div>
+
+        <!-- Categorías -->
+        <div class="flex flex-wrap justify-center gap-4 mb-12">
+
+            <button (click)="filterCategory('Todos')" class="px-4 py-2 rounded-full cursor-pointer" [ngClass]="selectedCategory === 'Todos'
+        ? 'bg-pink-600 text-white'
+        : 'bg-white border hover:bg-pink-100'">
+                Todos
+            </button>
+
+            <button (click)="filterCategory('Matemática')" class="px-4 py-2 rounded-full cursor-pointer" [ngClass]="selectedCategory === 'Matemática'
+        ? 'bg-pink-600 text-white'
+        : 'bg-white border hover:bg-pink-100'">
+                Matemática
+            </button>
+
+            <button (click)="filterCategory('Lenguaje')" class="px-4 py-2 rounded-full cursor-pointer" [ngClass]="selectedCategory === 'Lenguaje'
+        ? 'bg-pink-600 text-white'
+        : 'bg-white border hover:bg-pink-100'">
+                Lenguaje
+            </button>
+
+            <button (click)="filterCategory('Juegos')" class="px-4 py-2 rounded-full cursor-pointer" [ngClass]="selectedCategory === 'Juegos'
+        ? 'bg-pink-600 text-white'
+        : 'bg-white border hover:bg-pink-100'">
+                Juegos
+            </button>
+
+            <button (click)="filterCategory('Arte')" class="px-4 py-2 rounded-full cursor-pointer" [ngClass]="selectedCategory === 'Arte'
+        ? 'bg-pink-600 text-white'
+        : 'bg-white border hover:bg-pink-100'">
+                Arte
+            </button>
+
+        </div>
+
+        <!-- Grid de productos -->
+        <div class="grid md:grid-cols-3 lg:grid-cols-4 gap-8">
+
+            <app-card-product *ngFor="let product of filteredProducts" [url_image]="product.url_image"
+                [title]="product.title" [description]="product.description" [price]="product.price">
+            </app-card-product>
+
+        </div>
+
+    </div>
+
+</section>
